@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".AddActivity">
+    <EditText
+        android:paddingLeft="10dp"
+        android:hint="Nhập tên"
+        android:id="@+id/edt_update_name"
+        android:background="@drawable/bg_white_boder_gray"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:hint="Nhập địa chỉ"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edt_update_address"
+        android:background="@drawable/bg_white_boder_gray"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </EditText>
+    <EditText
+        android:paddingLeft="10dp"
+        android:hint="Nhập số điện thoại"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edt_update_phone"
+        android:background="@drawable/bg_white_boder_gray"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_save_update"
+        android:layout_marginTop="15dp"
+        android:text="Lưu"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+    </Button>
+</LinearLayout>
