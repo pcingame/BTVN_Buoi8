@@ -5,11 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingTop="20dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
     tools:context=".AddActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/actionbar_color"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:text="Thêm sinh viên"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
     <EditText
+        android:layout_margin="10dp"
         android:paddingLeft="10dp"
         android:hint="Nhập tên"
         android:id="@+id/edt_input_name"
@@ -19,6 +32,7 @@
 
     </EditText>
     <EditText
+        android:layout_margin="10dp"
         android:paddingLeft="10dp"
         android:hint="Nhập địa chỉ"
         android:layout_marginTop="15dp"
@@ -29,6 +43,7 @@
 
     </EditText>
     <EditText
+        android:layout_margin="10dp"
         android:paddingLeft="10dp"
         android:hint="Nhập số điện thoại"
         android:layout_marginTop="15dp"
@@ -40,6 +55,7 @@
     </EditText>
 
     <Button
+        android:layout_margin="10dp"
         android:id="@+id/btn_save_add"
         android:layout_marginTop="15dp"
         android:text="Lưu"

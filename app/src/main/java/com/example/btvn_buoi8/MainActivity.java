@@ -2,6 +2,7 @@ package com.example.btvn_buoi8;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,6 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.btvn_buoi8.database.StudentDatabase;
@@ -27,13 +29,18 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private StudentAdapter adapter;
     private List<Student> mStudentList;
-    int selectedID;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+
+
+        /*getSupportActionBar().setDisplayShowTitleEnabled(false);*/
 
         adapter = new StudentAdapter(new StudentAdapter.IClickItemStudent() {
             @Override
@@ -106,7 +113,11 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         imgAdd = findViewById(R.id.img_add);
         recyclerView = findViewById(R.id.recycleview);
-
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        /*TextView mTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
+        setSupportActionBar(toolbar);
+        mTitle.setText(toolbar.getTitle());
+*/
     }
 
     @Override
